@@ -18,7 +18,9 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
-echo $FORCE_UNSAFE_CONFIGURE
+echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
+
+FORCE_UNSAFE_CONFIGURE=1
 
 set +e
 
