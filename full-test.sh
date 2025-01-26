@@ -20,8 +20,6 @@ echo "Running test with user $(whoami)"
 
 echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
-FORCE_UNSAFE_CONFIGURE=1
-
 set +e
 
 # If there's a configuration for the assignment number, use this to look for
