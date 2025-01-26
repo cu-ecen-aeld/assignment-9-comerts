@@ -18,6 +18,8 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
+echo $FORCE_UNSAFE_CONFIGURE
+
 set +e
 
 # If there's a configuration for the assignment number, use this to look for
