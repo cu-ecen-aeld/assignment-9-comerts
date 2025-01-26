@@ -20,6 +20,11 @@ echo "Running test with user $(whoami)"
 
 echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
+
+cd buildroot
+git checkout 2024.02.x
+cd ..
+
 set +e
 
 # If there's a configuration for the assignment number, use this to look for
