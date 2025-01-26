@@ -21,13 +21,6 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
-#export FORCE_UNSAFE_CONFIGURE=1
-#echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
-
-#cd buildroot
-#git checkout 2024.02.x
-#cd ..
-
 set +e
 
 # If there's a configuration for the assignment number, use this to look for
