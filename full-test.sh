@@ -22,7 +22,7 @@ echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
 
 cd buildroot
-git checkout 2024.02.x
+git checkout 2022.02.x
 cd ..
 
 set +e
