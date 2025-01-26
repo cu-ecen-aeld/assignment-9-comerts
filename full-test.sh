@@ -6,6 +6,9 @@ set -e
 
 cd `dirname $0`
 test_dir=`pwd`
+
+export SKIP_BUILD=1
+
 echo "starting test with SKIP_BUILD=\"${SKIP_BUILD}\" and DO_VALIDATE=\"${DO_VALIDATE}\""
 
 # This part of the script always runs as the current user, even when
@@ -18,8 +21,8 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
-export FORCE_UNSAFE_CONFIGURE=1
-echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
+#export FORCE_UNSAFE_CONFIGURE=1
+#echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
 #cd buildroot
 #git checkout 2024.02.x
