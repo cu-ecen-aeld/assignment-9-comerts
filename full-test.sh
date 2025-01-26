@@ -21,9 +21,9 @@ echo "Running test with user $(whoami)"
 export FORCE_UNSAFE_CONFIGURE=1
 echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
-cd buildroot
-git checkout 2024.02.x
-cd ..
+#cd buildroot
+#git checkout 2024.02.x
+#cd ..
 
 set +e
 
