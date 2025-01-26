@@ -19,7 +19,6 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 echo "Running test with user $(whoami)"
 
 export FORCE_UNSAFE_CONFIGURE=1
-make host-tar-dirclean
 echo "FORCE_UNSAFE_CONFIGURE="${FORCE_UNSAFE_CONFIGURE}
 
 cd buildroot
